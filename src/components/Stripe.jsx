@@ -1,13 +1,13 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 
-const Stripe = ({ val }) => {
+function Stripe({ val }) {
   return (
-    // why width 16.66 because 100 percent width divide by 6 images answer is 16.66so each will 16.66%
-    <div className="w-[16.66%] px-10 py-5 border-t-[1.2px] border-b-[1.2px] border-r-[1.2px] bg-zinc-600 flex justify-between items-center">
-      <img src={val.url} alt="" />
-      <span className="font-semibold">{val.number}</span>
+    <div className="min-w-[20em] px-8 py-6 border-t-[1px] border-b-[1px] border-r-[1px] border-zinc-600 flex items-center justify-between ">
+      <img className="h-6" src={val.url} alt="" />
+      <span className="font-semibold text-lg">{val.number}</span>
     </div>
   );
-};
+}
 
 export default Stripe;

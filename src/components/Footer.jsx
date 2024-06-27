@@ -1,9 +1,9 @@
 import React from "react";
 
-const Footer = () => {
+function Footer() {
   return (
     <div className="w-full">
-      <div className="max-w-screen-xl mx-auto py-10 flex gap-32">
+      <div className=" max-w-screen-xl mx-auto py-10 flex gap-32">
         <div className="basis-1/2">
           <h1 className="text-[11.5rem] font-semibold leading-none tracking-tight">
             refokus.
@@ -11,9 +11,9 @@ const Footer = () => {
         </div>
         <div className="basis-1/2 flex gap-4">
           <div className="basis-1/3">
-            <h1 className="mb-10 text-zinc-500 capitalize">social</h1>
-            {["instagram", "twitter (x?)", "LinkedIn"].map((item, key) => (
-              <a key={key} className="block mt-2 capitalize text-zinc-600 ">
+            <h4 className=" mb-10 text-zinc-400 capitalize">socials</h4>
+            {["instagram", "twitter (x?)", "LinkedIn"].map((item, index) => (
+              <a key={index} className="block mt-2 capitalize text-zinc-600">
                 {item}
               </a>
             ))}
@@ -29,20 +29,20 @@ const Footer = () => {
           </div>
 
           <div className="basis-1/2 flex flex-col items-end">
-            <p className="text-right font-medium">
-              refokus is a pionerring digital agency driven by design and
+            <p className="text-right">
+              Refokus is pioneering digital agency driven by design and
               empowered by technology.
-              <img
-                src="https://assets_global.website_files.com/6334198f239547d0f9cd84b3/63455da11b54556c9d28aa3e_Badge-EnterprisePartner-Blue%201.svg"
-                className="w-32 mt-10"
-                alt=""
-              />
             </p>
+            <img
+              className="w-32 mt-12"
+              src="https://assets-global.website-files.com/5df3de8e749203dc3167a479/65369e818884afbae46a35fc_Webflow-badge.svg"
+              alt="logo"
+            />
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Footer;
